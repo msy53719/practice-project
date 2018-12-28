@@ -1,4 +1,4 @@
-package com.practice.project.two;
+package com.practice.project.three;
 
 public class Course {
 
@@ -6,16 +6,18 @@ public class Course {
 	 * 
 	 */
 	// private static final long serialVersionUID = 1L;
-	private static final double isPass=60.00;
+	private static final double IS_PASS = 60.00;
+	private static final double MIN_SOCRE = 0.00;
+	private static final double MAX_SOCRE = 100.00;
 	private String courseName;
 	private double courseScore;
 	private String courseTeacher;
 
-//	public Course(String courseName, double courseScore, String courseTeacher) {
-//		this.courseName = courseName;
-//		this.courseScore = courseScore;
-//		this.courseTeacher = courseTeacher;
-//	};
+	// public Course(String courseName, double courseScore, String courseTeacher) {
+	// this.courseName = courseName;
+	// this.courseScore = courseScore;
+	// this.courseTeacher = courseTeacher;
+	// };
 
 	public String getCourseName() {
 		return courseName;
@@ -41,17 +43,19 @@ public class Course {
 		this.courseTeacher = courseTeacher;
 	}
 
-	public Boolean isPass(double courseScore) {
-		if ( courseScore >= isPass) {
-			return true;
-		} else {
-			return false;
+	public String isPass(double courseScore) {
+		if (MAX_SOCRE >= courseScore && courseScore >= IS_PASS) {
+			return "及格";
+		} else if (IS_PASS>= courseScore && courseScore >=MIN_SOCRE) {
+			return "不及格";
+		}else{
+			return "成绩输入错误";
 		}
 	}
 
 	public static void main(String[] args) {
-		Course course=new Course();
-		course.setCourseScore(60);
+		Course course = new Course();
+		course.setCourseScore(0);
 		course.isPass(course.getCourseScore());
 		System.out.println(course.isPass(course.getCourseScore()));
 
