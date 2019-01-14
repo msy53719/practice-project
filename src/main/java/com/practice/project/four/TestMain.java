@@ -10,6 +10,10 @@ public class TestMain {
  * 
  */
 	public static void main(String[] args) {
+		
+		DoThings perdo=new Person("豬");
+		perdo.eating();
+		
 		// TODO Auto-generated method stub
 		DoSomeThing playerOne=new Player("运动员", "篮球");
 		playerOne.studyEnglish();
