@@ -1,8 +1,13 @@
 package com.practice.project.two;
 
 public class Shape {
+	
 	private double x;
 	private double y;
+	
+	public Shape() {
+
+	}
 
 	public Shape(double x, double y) {
 		this.x = x;
@@ -12,4 +17,5 @@ public class Shape {
 	public double getArea() {
 		return 0.0;
 	}
+
 }
