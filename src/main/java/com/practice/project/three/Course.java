@@ -2,22 +2,12 @@ package com.practice.project.three;
 
 public class Course {
 
-	/**
-	 * 
-	 */
-	// private static final long serialVersionUID = 1L;
 	private static final double IS_PASS = 60.00;
 	private static final double MIN_SOCRE = 0.00;
 	private static final double MAX_SOCRE = 100.00;
 	private String courseName;
 	private double courseScore;
 	private String courseTeacher;
-
-	// public Course(String courseName, double courseScore, String courseTeacher) {
-	// this.courseName = courseName;
-	// this.courseScore = courseScore;
-	// this.courseTeacher = courseTeacher;
-	// };
 
 	public String getCourseName() {
 		return courseName;
