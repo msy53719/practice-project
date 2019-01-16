@@ -6,7 +6,7 @@ public class Qwert {
 	private final static String VAL_TWO = "cccAPP_1.0-";
 
 	public static String getChar(int i) {
-		if (i >= 0 && i < 10) {
+		if (i >= 1 && i < 10) {
 			return VAL_ONE + String.valueOf(i);
 		} else if (i >= 10) {
 			return VAL_TWO + String.valueOf(i);
