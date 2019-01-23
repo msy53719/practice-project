@@ -2,7 +2,7 @@ package com.practice.project.three;
 
 public class Course {
 
-	private static final double IS_PASS = 60.00;
+	private static final double PASS_SOCRE = 60.00;
 	private static final double MIN_SOCRE = 0.00;
 	private static final double MAX_SOCRE = 100.00;
 	private String courseName;
@@ -34,11 +34,11 @@ public class Course {
 	}
 
 	public String isPass(double courseScore) {
-		if (MAX_SOCRE >= courseScore && courseScore >= IS_PASS) {
+		if (MAX_SOCRE >= courseScore && courseScore >= PASS_SOCRE) {
 			return "及格";
-		} else if (IS_PASS>= courseScore && courseScore >=MIN_SOCRE) {
+		} else if (PASS_SOCRE > courseScore && courseScore >= MIN_SOCRE) {
 			return "不及格";
-		}else{
+		} else {
 			return "成绩输入错误";
 		}
 	}

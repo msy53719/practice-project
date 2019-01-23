@@ -73,10 +73,13 @@ public class StudentScore {
 		stu[7] = new Student("Name-h", 75, 90, 94);
 		stu[8] = new Student("Name-i", 90, 68, 84);
 		stu[9] = new Student("Name-j", 89, 69, 81);
-
-		getMaxSocre(getAllAvg(stu));
-		getNotPass(getAllAvg(stu));
-		sortMap(getAllAvg(stu));
-
+		//getMaxSocre(getAllAvg(stu));
+		//getNotPass(getAllAvg(stu));
+		//sortMap(getAllAvg(stu));
+        Map<String, Double> map=getAllAvg(stu);
+        getMaxSocre(map);
+        getNotPass(map);
+        sortMap(map);
+        
 	}
 }
