@@ -2,16 +2,16 @@ package com.practice.project.four;
 
 public abstract class Role implements DoSomeThing {
 
-	private String roleName;
+	private String role;
 
-	private String roleType;
+	private String balltype;
 
-	public Role(String roleName, String roleType) {
-		this.roleName = roleName;
-		this.roleType = roleType;
+	public Role(String role, String balltype) {
+		this.role = role;
+		this.balltype = balltype;
 	}
 
 	public void studyEnglish() {
-		System.out.println(roleType +roleName + "学习英语");
+		System.out.println(role +balltype + "学习英语");
 	}
 }

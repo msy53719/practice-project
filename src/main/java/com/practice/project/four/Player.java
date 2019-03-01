@@ -2,7 +2,7 @@ package com.practice.project.four;
 
 public class Player extends Role {
 
-	public Player(String roleName, String roleType) {
-		super(roleName, roleType);
+	public Player(String role, String balltype) {
+		super(role, balltype);
 	}
 }
